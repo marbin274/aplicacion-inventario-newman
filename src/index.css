@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+button, input, optgroup, select, textarea {
+  @apply text-black dark:text-white;
+}
+
+.btn {
+  @apply px-4 py-2 rounded font-medium transition-colors duration-200;
+}
+
+.btn--primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn--secondary {
+  @apply bg-gray-600 text-white hover:bg-gray-700;
+}
+
+.btn--danger {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md;
+}
+
+.card__header {
+  @apply p-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.card__content {
+  @apply p-4;
+}
+
+.form-group {
+  @apply mb-4;
+}
+
+.form-group__label {
+  @apply block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300;
+}
+
+.form-group__input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none;
+}
+
+.modal {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50;
+}
+
+.modal__content {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full;
+}
+
+.sidebar {
+  @apply h-full;
+}
+
+.sidebar--main {
+  @apply bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700;
+}
+
+.sidebar__header {
+  @apply px-4 py-6 border-b border-gray-200 dark:border-gray-700;
+}
+
+.sidebar__nav {
+  @apply mt-6;
+}
+
+.nav-item {
+  @apply block px-4 py-2 text-sm transition-colors duration-200;
+}
+
+.nav-item--sidebar {
+  @apply text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white;
+}
+
+.nav-item--active {
+  @apply bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-200 border-r-2 border-blue-600;
+}
+
+.header {
+  @apply bg-white dark:bg-gray-800 shadow-sm;
+}
+
+.header--main {
+  @apply border-b border-gray-200 dark:border-gray-700;
+}
+
+.header__content {
+  @apply px-6 py-4;
+}
+
+.main {
+  @apply flex-1;
+}
+
+.main--content {
+  @apply p-6;
+}
+
+.loading {
+  @apply flex items-center justify-center;
+}
+
+.loading--screen {
+  @apply min-h-screen;
+}
+
+.loading__spinner {
+  @apply animate-spin rounded-full border-2 border-transparent border-t-blue-600;
+}
+
+.stat-card {
+  @apply bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg;
+}
+
+.stat-card__icon {
+  @apply flex-shrink-0;
+}
+
+.stat-card__info {
+  @apply flex-1;
+}
+
+.alert {
+  @apply rounded-md p-4;
+}
+
+.alert--warning {
+  @apply bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800;
+}
+
+.dashboard__header,
+.products-page__header,
+.suppliers-page__header,
+.orders-page__header,
+.customer-orders-page__header {
+  @apply mb-6;
+}
+
+.dashboard__stats {
+  @apply mb-6;
+}
+
+.dashboard__alerts,
+.dashboard__recent {
+  @apply mb-6;
+}
+
+.resume_operation {
+  @apply mt-4 p-3 bg-gray-100 dark:bg-gray-200 rounded-lg;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
